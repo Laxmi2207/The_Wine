@@ -1,0 +1,154 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .brandName {
+    font-size: 50px;
+  }
+  .subBrand {
+    font-size: 17px;
+  }
+  .win-bar-continer {
+    margin-bottom: 30px;
+  }
+  .rectangle-parent {
+    left: 35%;
+  }
+  .pHolder {
+    padding: 5px;
+  }
+  .k-parent {
+    font-size: 12px;
+  }
+  .k {
+    font-size: 20px;
+  }
+  .leftSectionParent {
+    gap: 15px;
+    margin-left: 50px;
+  }
+  #customNav {
+    background: #161032 !important;
+  }
+  .marketplace {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .brandName {
+    font-size: 100px;
+  }
+  .subBrand {
+    font-size: 25px;
+  }
+  .win-bar-continer {
+    margin-bottom: 30px;
+  }
+  .rectangle-parent {
+    left: 45%;
+  }
+  .leftSectionParent {
+    gap: 40px;
+  }
+  #customNav {
+    background: #161032 !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .brandName {
+    font-size: 100px;
+  }
+  .subBrand {
+    font-size: 25px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .brandName {
+    font-size: 200px;
+    padding-left: 10%;
+  }
+  .subBrand {
+    font-size: 25px;
+  }
+  .winBarSection {
+    margin-top: 20%;
+  }
+  .win-bar-continer {
+    margin-bottom: 40%;
+  }
+  .rectangle-parent {
+    left: 50%;
+  }
+  #customNav {
+    background: transparent !important;
+  }
+  .marketplace {
+    margin-left: 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 767px) {
+  .group-child1,
+  .image-3-icon {
+    position: static;
+    object-fit: cover;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .group-wrapper,
+  .group-frame,
+  .group-wrapper1,
+  .group-wrapper2,
+  .group-parent16 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .group-child1,
+  .image-3-icon {
+    width: 80%;
+  }
+
+  .group-wrapper,
+  .group-frame,
+  .group-wrapper1,
+  .group-wrapper2,
+  .group-parent16 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .group-child1,
+  .image-3-icon {
+    width: 90%;
+  }
+
+  .group-wrapper,
+  .group-frame,
+  .group-wrapper1,
+  .group-wrapper2,
+  .group-parent16 {
+    width: 90%;
+  }
+}

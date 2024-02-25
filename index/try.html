@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Vidaloka:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sofia Sans:wght@400;700&display=swap"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      .mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 4px;
+  width: 23px;
+  margin: 0 2px; 
+  background-color: rgb(182, 182, 182);
+  /* border-radius: 50%; */
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+
+}
+
+.active, .dot:hover {
+  background-color: #f53756;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+
+
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.top-buy{
+  border: none;
+    border-radius: 5px;
+    padding: 8px 48px;
+    font-size: 47px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #f53756;
+    color: white;
+    font-family: Vidaloka;
+}
+
+.top-buy:hover{
+  /* background-color:#ddd; */
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color:#fff;
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-options a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  font-size: 12px;
+  text-decoration: none;
+  padding:20px 40px;
+}
+
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
+
+.email-box{
+  position: absolute;
+    top: -1px;
+    left: -1px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    width: 550px;
+    height: 44px;
+    cursor: pointer;
+    background-color: #191532;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+    </style>
+  </head>
+  <body>
+    <div class="landing-page">
+      <!-- <img class="capa-1-1-icon" alt="" src="./public/capa1-1@2x.png" /> -->
+
+      <!-- <img class="landing-page-child" alt="" src="./public/group-34338.svg" /> -->
+
+      <!-- <div class="landing-page-item"></div> -->
+
+      <!-- <img class="group-icon" alt="" src="./public/group.svg" /> -->
+
+      <div class="wine-bar">Wine Bar</div>
+      <!-- <img class="group-icon1" alt="" src="./public/group1.svg" /> -->
+
+      <!-- <img class="vector-icon" alt="" src="./public/vector.svg" /> -->
+
+     
+
+
+      
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">1 / 3</div> -->
+    <img src="./sc.jpeg" style="width:100%">
+
+  </div>
+  
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">2 / 3</div> -->
+    <img src="./sc.jpeg" style="width:100%">
+
+  </div>
+  
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">3 / 3</div> -->
+    <img src="./sc.jpeg" style="width:100%">
+
+  </div>
+
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">3 / 3</div> -->
+    <img src="./sc.jpeg" style="width:100%">
+
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)"></a>
+  <a class="next" onclick="plusSlides(1)"></a>
+  
+
+<br><br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>  
+</div>
+  </div>
+  <br> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div class="rectangle-parent">
+        <div class="group-child"></div>
+        <div class="group-item"></div>
+        <div class="group-inner"></div>
+        <div class="rectangle-div"></div>
+      </div> -->
+      <div class="marketplace">MARKETPLACE</div>
+      <div class="our-collabs">Our Collabs</div>
+      <div class="frame"></div>
+      <div class="buttons-parent">
+        <div class="buttons" id="left-btn" onclick="plusSlides(-1)">
+          <img class="frame-icon"  alt="" src="./public/frame.svg" />
+          
+        </div>
+
+        <div class="buttons" onclick="plusSlides(1)">
+         
+          <img class="frame-icon" alt="" src="./public/frame1.svg" />
+        </div>
+       
+         
+        
+        <div class="buttonsprimarydeafult">
+          <div class="vector-parent">
+            <img class="vector-icon1" alt="" src="./public/vector1.svg" />
+
+            <b class="all">All</b>
+          </div>
+        </div>
+      </div>
+      <div class="frame-parent">
+        <div class="group-container">
+          <div class="vector-group">
+            <!-- <img
+              class="rectangle-icon"
+              alt=""
+              src="./public/rectangle-3324.svg"
+            /> -->
+
+            <img
+            class="rectangle-icon"
+            alt=""
+            src="./public/rectangle-33241.svg"
+          />
+
+
+            <div class="group-wrapper">
+              <div class="group-div">
+                <div class="group-div">
+                  <div class="parent">
+                    <b class="b">24</b>
+                    <b class="b1">0.0349</b>
+                    <div class="eth">ETH</div>
+                    <div class="description">Edition</div>
+                    <div class="description1">Floor Price</div>
+                  </div>
+                  <div class="weingut-egon-mller">Weingut Egon Müller</div>
+                  <img
+                    class="group-child1"
+                    alt=""
+                    src="./public/rectangle-3323@2x.png"
+                  />
+
+                  <img
+                    class="image-3-icon"
+                    alt=""
+                    src="./public/image-3@2x.png"
+                  />
+                </div>
+                <img
+                  class="group-child2"
+                  alt=""
+                  src="./public/group-34289.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="vector-group">
+            <img
+              class="rectangle-icon"
+              alt=""
+              src="./public/rectangle-33241.svg"
+            />
+
+            <div class="group-frame">
+              <div class="group-parent2">
+                <div class="group-parent3">
+                  <div class="group">
+                    <b class="b">24</b>
+                    <b class="b1">0.0349</b>
+                    <div class="eth">ETH</div>
+                    <div class="description">Edition</div>
+                    <div class="description1">Floor Price</div>
+                  </div>
+                  <div class="weingut-egon-mller1">Weingut Egon Müller</div>
+                </div>
+                <img
+                  class="group-child4"
+                  alt=""
+                  src="./public/group-342891.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="vector-parent1">
+            <img
+              class="rectangle-icon"
+              alt=""
+              src="./public/rectangle-33242.svg"
+            />
+
+            <div class="group-wrapper1">
+              <div class="group-parent4">
+                <div class="group-parent5">
+                  <div class="group">
+                    <b class="b">24</b>
+                    <b class="b1">0.0349</b>
+                    <div class="eth">ETH</div>
+                    <div class="description">Edition</div>
+                    <div class="description1">Floor Price</div>
+                  </div>
+                  <div class="weingut-egon-mller1">Weingut Egon Müller</div>
+                </div>
+                <img
+                  class="group-child6"
+                  alt=""
+                  src="./public/group-342892.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="vector-group">
+            <img
+              class="rectangle-icon"
+              alt=""
+              src="./public/rectangle-33243.svg"
+            />
+
+            <div class="group-wrapper2">
+              <div class="group-parent2">
+                <div class="group-parent7">
+                  <div class="group">
+                    <b class="b">24</b>
+                    <b class="b1">0.0349</b>
+                    <div class="eth">ETH</div>
+                    <div class="description">Edition</div>
+                    <div class="description1">Floor Price</div>
+                  </div>
+                  <div class="weingut-egon-mller1">Weingut Egon Müller</div>
+                </div>
+                <img
+                  class="group-child4"
+                  alt=""
+                  src="./public/group-342893.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="group-container">
+          <div class="vector-group">
+            <img
+              class="rectangle-icon"
+              alt=""
+              src="./public/rectangle-33244.svg"
+            />
+
+            <div class="group-wrapper">
+              <div class="group-div">
+                <div class="group-div">
+                  <div class="parent">
+                    <b class="b">24</b>
+                    <b class="b1">0.0349</b>
+                    <div class="eth">ETH</div>
+                    <div class="description">Edition</div>
+                    <div class="description1">Floor Price</div>
+                  </div>
+                  <div class="weingut-egon-mller">Weingut Egon Müller</div>
+                  <img
+                    class="group-child1"
+                    alt=""
+                    src="./public/rectangle-3323@2x.png"
+                  />
+
+                  <img
+                    class="image-3-icon"
+                    alt=""
+                    src="./public/image-3@2x.png"
+                  />
+                </div>
+                <img
+                  class="group-child2"
+                  alt=""
+                  src="./public/group-34289.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="vector-group">
+            <img
+              class="rectangle-icon"
+              alt=""
+              src="./public/rectangle-33241.svg"
+            />
+
+            <div class="group-frame">
+              <div class="group-parent2">
+                <div class="group-parent3">
+                  <div class="group">
+                    <b class="b">24</b>
+                    <b class="b1">0.0349</b>
+                    <div class="eth">ETH</div>
+                    <div class="description">Edition</div>
+                    <div class="description1">Floor Price</div>
+                  </div>
+                  <div class="weingut-egon-mller1">Weingut Egon Müller</div>
+                </div>
+                <img
+                  class="group-child4"
+                  alt=""
+                  src="./public/group-342894.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="vector-parent1">
+            <img
+              class="rectangle-icon"
+              alt=""
+              src="./public/rectangle-33242.svg"
+            />
+
+            <div class="group-wrapper1">
+              <div class="group-parent4">
+                <div class="group-parent5">
+                  <div class="group">
+                    <b class="b">24</b>
+                    <b class="b1">0.0349</b>
+                    <div class="eth">ETH</div>
+                    <div class="description">Edition</div>
+                    <div class="description1">Floor Price</div>
+                  </div>
+                  <div class="weingut-egon-mller1">Weingut Egon Müller</div>
+                </div>
+                <img
+                  class="group-child6"
+                  alt=""
+                  src="./public/group-342895.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="vector-group">
+            <img
+              class="rectangle-icon"
+              alt=""
+              src="./public/rectangle-33243.svg"
+            />
+
+            <div class="group-wrapper2">
+              <div class="group-parent2">
+                <div class="group-parent7">
+                  <div class="group">
+                    <b class="b">24</b>
+                    <b class="b1">0.0349</b>
+                    <div class="eth">ETH</div>
+                    <div class="description">Edition</div>
+                    <div class="description1">Floor Price</div>
+                  </div>
+                  <div class="weingut-egon-mller1">Weingut Egon Müller</div>
+                </div>
+                <img
+                  class="group-child4"
+                  alt=""
+                  src="./public/group-342896.svg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-parent16">
+        <div class="vector-group">
+          <img
+            class="rectangle-icon"
+            alt=""
+            src="./public/rectangle-33244.svg"
+          />
+
+          <div class="group-wrapper">
+            <div class="group-div">
+              <div class="group-div">
+                <div class="parent">
+                  <b class="b">24</b>
+                  <b class="b1">0.0349</b>
+                  <div class="eth">ETH</div>
+                  <div class="description">Edition</div>
+                  <div class="description1">Floor Price</div>
+                </div>
+                <div class="weingut-egon-mller">Weingut Egon Müller</div>
+                <img
+                  class="group-child1"
+                  alt=""
+                  src="./public/rectangle-3323@2x.png"
+                />
+
+                <img
+                  class="image-3-icon"
+                  alt=""
+                  src="./public/image-3@2x.png"
+                />
+              </div>
+              <img class="group-child2" alt="" src="./public/group-34289.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="vector-group">
+          <img
+            class="rectangle-icon"
+            alt=""
+            src="./public/rectangle-33241.svg"
+          />
+
+          <div class="group-frame">
+            <div class="group-parent2">
+              <div class="group-parent3">
+                <div class="group">
+                  <b class="b">24</b>
+                  <b class="b1">0.0349</b>
+                  <div class="eth">ETH</div>
+                  <div class="description">Edition</div>
+                  <div class="description1">Floor Price</div>
+                </div>
+                <div class="weingut-egon-mller1">Weingut Egon Müller</div>
+              </div>
+              <img
+                class="group-child4"
+                alt=""
+                src="./public/group-342897.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="vector-parent1">
+          <img
+            class="rectangle-icon"
+            alt=""
+            src="./public/rectangle-33242.svg"
+          />
+
+          <div class="group-wrapper1">
+            <div class="group-parent4">
+              <div class="group-parent5">
+                <div class="group">
+                  <b class="b">24</b>
+                  <b class="b1">0.0349</b>
+                  <div class="eth">ETH</div>
+                  <div class="description">Edition</div>
+                  <div class="description1">Floor Price</div>
+                </div>
+                <div class="weingut-egon-mller1">Weingut Egon Müller</div>
+              </div>
+              <img
+                class="group-child6"
+                alt=""
+                src="./public/group-342898.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="vector-group">
+          <img
+            class="rectangle-icon"
+            alt=""
+            src="./public/rectangle-33243.svg"
+          />
+
+          <div class="group-wrapper2">
+            <div class="group-parent2">
+              <div class="group-parent7">
+                <div class="group">
+                  <b class="b">24</b>
+                  <b class="b1">0.0349</b>
+                  <div class="eth">ETH</div>
+                  <div class="description">Edition</div>
+                  <div class="description1">Floor Price</div>
+                </div>
+                <div class="weingut-egon-mller1">Weingut Egon Müller</div>
+              </div>
+              <img
+                class="group-child4"
+                alt=""
+                src="./public/group-342899.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-group">
+        <div class="group-child27"></div>
+        <b class="buy-now">Buy Now</b>
+      </div>
+      <div class="logo-parent">
+        <div class="logo">
+          <img class="logo-child" alt="" src="./public/group-34370.svg" />
+
+          <div class="vintag3">VINTAG3</div>
+        </div>
+        <div class="frame-group">
+          <div class="home-parent">
+            <b class="home">Home</b>
+            <div class="frame-child"></div>
+          </div>
+          <div class="marketplace1">Marketplace</div>
+          <div class="brands">Brands</div>
+          <div class="wineries">Wineries</div>
+          <div class="buttonsprimarydeafult-parent">
+            <div class="buttonsprimarydeafult1">
+              <div class="group-group">
+                <img class="group-icon2" alt="" src="./public/group2.svg" />
+
+                <b class="all">Connect Wallet</b>
+              </div>
+            </div>
+            <div class="buttonsprimarydeafult2">
+              <div class="vector-parent11">
+                <img class="vector-icon2" alt="" src="./public/vector2.svg" />
+
+                <b class="all">Signup</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lorem-ipsum-dolor2">
+        Lorem ipsum dolor sit amet consetur. Turpis interdum vitae cursus diam
+        orci suspendisse ipsum phasellus. Scesque pharetra.Lorem ipsum dolor sit
+        amet consetur. Turpis interdum vitae cursus diam orci suspendisse ipsum
+        phasellus. Scesque pharetra.
+      </div>
+      <div class="group-parent25">
+        <div class="image-11-parent">
+          <img class="image-11-icon" alt="" src="./public/image-11@2x.png" />
+
+          <div class="fizzysip">FizzySip</div>
+        </div>
+        <img class="image-7-icon" alt="" src="./public/image-7@2x.png" />
+
+        <img class="image-8-icon" alt="" src="./public/image-8@2x.png" />
+
+        <img class="image-9-icon" alt="" src="./public/image-9@2x.png" />
+
+        <img class="image-10-icon" alt="" src="./public/image-10@2x.png" />
+
+        <img class="image-12-icon" alt="" src="./public/image-12@2x.png" />
+      </div>
+      <div class="stay-notified-parent">
+        <div class="stay-notified">Stay Notified</div>
+        <b class="join-our-mailing"
+          >Join our mailing list to learn about our upcoming Wineries</b
+        >
+        <div class="email-address-parent">
+          <div class="email-address">Email Address :</div>
+          <div class="rectangle-container">
+            <div class="group-child28">
+
+
+              <input class="email-box" type="email" placeholder="abc@gmail.com">
+            </div>
+            <!-- <div class="abcgmailcom">abc@gmail.com</div> -->
+          </div>
+        </div>
+        <div class="rectangle-parent1">
+          <div class="group-child29"></div>
+          <b class="join">Join</b>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <!-- footer  -->
+      <div class="vector-parent12">
+        <img
+          class="group-child30"
+          alt=""
+          src="./public/rectangle-4572@2x.png"
+        />
+
+        <div class="group-wrapper11">
+          <div class="vintage-parent">
+            <div class="vintage">©2023 Vintage</div>
+            <div class="about-us-parent">
+              <div class="email-address">About Us</div>
+              <div class="email-address">Privacy Policy</div>
+              <div class="email-address">Terms of Service</div>
+            </div>
+          </div>
+        </div>
+        <div class="line-div"></div>
+        <div class="logo-group">
+          <div class="logo1">
+            <img class="logo-item" alt="" src="./public/group-343701.svg" />
+
+            <div class="vintag31">VINTAG3</div>
+          </div>
+          <b class="the-nft-marketplace-container">
+            <p class="the-nft-marketplace">The NFT Marketplace for Fine</p>
+            <p class="the-nft-marketplace">Wines</p>
+          </b>
+        </div>
+        <div class="platform-parent">
+          <b class="platform">Platform</b>
+          <div class="releases">Brands</div>
+          <div class="releases">Releases</div>
+          <div class="releases">Marketplace</div>
+          <div class="releases">Collabs</div>
+          <div class="releases">FAQ</div>
+        </div>
+        <div class="contact-us-parent">
+          <b class="platform">Contact Us</b>
+          <div class="releases">Vintage@mailinator.com</div>
+          <div class="releases">9109-9806432790</div>
+        </div>
+        <div class="follow-us-parent">
+          <b class="releases">Follow us:</b>
+          <div class="vector-parent13">
+            <img class="vector-icon3" alt="" src="./public/vector3.svg" />
+
+            <img class="telegram-icon" alt="" src="./public/telegram.svg" />
+
+            <img class="telegram-icon" alt="" src="./public/twitter.svg" />
+
+            <img class="vector-icon3" alt="" src="./public/vector4.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="group-parent26">
+        <div class="wrapper">
+          <img class="icon" alt="" src="./public/3771617-1@2x.png" />
+        </div>
+        <div class="group-child31"></div>
+      </div>
+      <img class="landing-page-inner" alt="" src="./public/vector-2.svg" />
+
+      <img class="landing-page-child1" alt="" src="./public/vector-3.svg" />
+
+      <img
+        class="landing-page-child2"
+        alt=""
+        src="./public/rectangle-400.svg"
+      />
+
+      <div class="rectangle-parent2">
+        <div class="group-child32"></div>
+        <b class="get-in-touch">Get in Touch</b>
+      </div>
+      <div class="become-a-partner">Become a Partner</div>
+      <div class="are-you-a">
+        Are you a Luxury brand Looking to launch an NFT and reach a new
+        Audience?
+      </div>
+      <img class="frame-icon2" alt="" src="./public/frame2.svg" />
+
+      <div class="landing-page-inner1">
+        <div class="top-buyers-parent">
+          <div class="top-buyers-parent">
+           
+
+            <div class="dropdown">
+              <button class="top-buy ">TOP BUYERS  &nbsp;&nbsp;<i class="fa fa-caret-down"></i></button>
+
+              <div class="dropdown-options">
+                <a href="#">Weingut Egon Müller</a>
+                <a href="#">Weingut Egon Müller</a>
+                <a href="#">Weingut Egon Müller</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+      
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+
+        for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+
+ 
+  }
+
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
+      <script>
+      let dots = document.getElementsByClassName("dot");
+
+for (let i = 0; i < dots.length; i++) {
+
+    if (dots[i].classList.contains("active")) {
+ 
+       
+
+    }
+}
+
+      </script>
+      
+  </body>
+</html>
+
